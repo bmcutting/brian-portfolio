@@ -18,7 +18,7 @@ export const projects = [
       "Aplicación de ejemplo en .NET para organizar proyectos de programación y aprender nuevas tecnologías.",
     details:
       "CodeAgenda está desarrollada siguiendo los principios de CQRS y DDD (Domain-Driven Design). Utiliza Entity Framework Core para el acceso a datos, Mediator para la comunicación entre componentes y AutoMapper para simplificar el mapeo entre objetos. Incluye pruebas unitarias con xUnit. Su arquitectura modular y desacoplada facilita la mantenibilidad y escalabilidad del código.",
-    github: "https://github.com/usuario/CodeAgenda",
+    github: "https://github.com/bmcutting/CodeAgenda",
     deploy: null,
     image: Programming,
   },
