@@ -186,12 +186,12 @@ export const ContactPage = () => {
             </div>
 
              <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
+              <label htmlFor="subject" className="block text-sm font-medium mb-2">
                 Asunto
               </label>
               <input
                 type="text"
-                id="name"
+                id="subject"
                 name="user_subject"
                 value={formData.name}
                 onChange={handleChange}

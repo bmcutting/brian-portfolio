@@ -10,7 +10,7 @@ function App() {
       <ThemeProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Layout />}>
+            <Route path="/brian-portfolio" element={<Layout />}>
               <Route index element={<Page />} />
             </Route>
           </Routes>
