@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { projects } from "./projects";
+import { certifications } from "./certifications"; // Importa tus certificaciones
 
 export const ProjectPage = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -14,7 +15,8 @@ export const ProjectPage = () => {
         Mis Proyectos
       </h1>
 
-      <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-items-center">
+      {/* Grid de Proyectos */}
+      <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-items-center mb-20">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -41,7 +43,41 @@ export const ProjectPage = () => {
         ))}
       </div>
 
-      {/* Modal */}
+      {/* Sección de Certificaciones */}
+      <div className="mt-20">
+        <h2 className="text-4xl font-bold text-center mb-12 tracking-tight">
+          Mis Certificaciones
+        </h2>
+        
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center max-w-6xl mx-auto">
+          {certifications.map((certification) => (
+            <a
+              key={certification.id}
+              href={certification.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group max-w-xs w-full bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div className="p-6">
+                <div className="flex justify-center mb-4">
+                  <img
+                    src={certification.img}
+                    alt={`Certificación ${certification.id}`}
+                    className="h-32 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="text-center">
+                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 group-hover:underline">
+                    Ver certificación
+                  </span>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* Modal para Proyectos */}
       {selectedProject && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
           <div className="bg-white dark:bg-gray-900 text-black dark:text-white p-8 rounded-2xl max-w-lg w-full shadow-xl relative">
