@@ -12,7 +12,7 @@ export const habilities = [
   { img: Cs, label: "C#", type: "backend"},
   { img: Dotnet, label: ".NET", type: "backend" },
   { img: Postgresql, label: "PostgreSQL", type: "backend" },
-  { img: React, label: "ReactJS", type: "frontend" },
+  { img: React, label: "React", type: "frontend" },
   { img: Css, label: "CSS", type: "frontend" },
   { img: HTML, label: "HTML", type: "frontend" },
   { img: Github, label: "Github", type: "others" },
