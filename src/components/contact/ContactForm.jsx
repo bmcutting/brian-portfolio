@@ -1,64 +1,17 @@
-import { useState, useRef } from "react";
-import emailjs from "@emailjs/browser";
+import { useContactForm } from "../../hooks/useContactForm";
 
 export const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    user_name: "",
-    user_email: "",
-    user_subject: "",
-    message: "",
-  });
-  const [done, setDone] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const formRef = useRef();
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    emailjs
-      .sendForm(
-        "service_g9hv03q",
-        "template_sa8ple7",
-        formRef.current,
-        "F7M9IZfavEec8egYK"
-      )
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          setDone(true);
-          setLoading(false);
-          setFormData({
-            user_name: "",
-            user_email: "",
-            user_subject: "",
-            message: "",
-          });
-          setTimeout(() => {
-            setDone(false);
-          }, 5000);
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-          setLoading(false);
-          alert("Error al enviar el mensaje. Por favor, intenta nuevamente.");
-        }
-      );
-  };
+  const { formData, done, loading, formRef, handleChange, handleSubmit } =
+    useContactForm();
 
   return (
     <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
       <h2 className="text-2xl font-semibold mb-6">Envíame un mensaje</h2>
       {done && (
-        <div className="mb-6 p-4 bg-green-100 dark:bg-green-900 border border-green-400 
-        dark:border-green-600 text-green-800 dark:text-green-200 rounded-lg">
+        <div
+          className="mb-6 p-4 bg-green-100 dark:bg-green-900 border border-green-400 
+        dark:border-green-600 text-green-800 dark:text-green-200 rounded-lg"
+        >
           ✅ ¡Mensaje enviado con éxito! Te contactaré pronto.
         </div>
       )}
