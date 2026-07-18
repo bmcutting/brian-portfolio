@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { projects } from "./projects";
-import { CertificationsPage } from "./CertificationsPage";
 import { ViewMore } from "./ViewMore";
 
 export const ProjectPage = () => {
@@ -16,9 +15,9 @@ export const ProjectPage = () => {
         Mis Proyectos
       </h1>
       <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-items-center mb-20">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <div
-            key={index}
+            key={project.title}
             className="max-w-sm w-full bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
           >
             <img
@@ -41,7 +40,6 @@ export const ProjectPage = () => {
           </div>
         ))}
       </div>
-      <CertificationsPage />
 
       {selectedProject && (
         <ViewMore

@@ -82,6 +82,17 @@ export const Header = () => {
       <button
         className={`hover:dark:text-white transition-colors cursor-pointer hover:dark:bg-black/30 p-4 rounded-xl
         ${
+          activeSection === "certifications"
+            ? "dark:text-white font-extrabold transition-all duration-500"
+            : ""
+        }`}
+        onClick={() => scrollToSection("certifications")}
+      >
+        Certificaciones
+      </button>
+      <button
+        className={`hover:dark:text-white transition-colors cursor-pointer hover:dark:bg-black/30 p-4 rounded-xl
+        ${
           activeSection === "contact"
             ? "dark:text-white font-extrabold transition-all duration-500"
             : ""
