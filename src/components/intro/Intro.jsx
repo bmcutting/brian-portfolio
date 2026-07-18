@@ -1,11 +1,5 @@
 import Brian from "../../assets/images/BrianPic.png";
-import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
-
-const PORTFOLIO_URL = "https://bmcutting.github.io/brian-portfolio/";
-const shareText = encodeURIComponent(
-  `Mira mi portfolio como Desarrollador de Software 👉 ${PORTFOLIO_URL}`
-);
-const whatsappShareUrl = `https://wa.me/?text=${shareText}`;
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export const Intro = () => {
 
@@ -82,15 +76,6 @@ export const Intro = () => {
             className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 duration-400 hover:scale-130 transition-transform"
           >
             <FaLinkedinIn className="text-4xl" />
-          </a>
-          <a
-            href={whatsappShareUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Compartir portfolio por WhatsApp"
-            className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-400 duration-400 hover:scale-130 transition-transform"
-          >
-            <FaWhatsapp className="text-4xl" />
           </a>
         </div>
       </div>
