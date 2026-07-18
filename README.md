@@ -1,12 +1,41 @@
-# React + Vite
+# Brian Michel — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personal de **Brian Michel Morales Cutting**, Desarrollador de Software e Ingeniero en Automática.
 
-Currently, two official plugins are available:
+### 🌐 [Ver el portfolio en vivo → bmcutting.github.io/brian-portfolio](https://bmcutting.github.io/brian-portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Especializado en **React, TypeScript, Tailwind CSS** y **.NET / C#**. Con experiencia en desarrollo frontend, APIs REST y automatización industrial.
 
-## Expanding the ESLint configuration
+## ✨ Secciones
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Inicio** — presentación y enlaces a redes.
+- **Acerca de mí** — trayectoria y habilidades técnicas.
+- **Experiencia** — historial profesional.
+- **Proyectos** — trabajos destacados con detalle.
+- **Certificaciones** — certificados verificables (freeCodeCamp, EF SET).
+- **Contacto** — formulario y datos de contacto.
+
+## 🛠️ Tecnologías
+
+- [React 19](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+- [EmailJS](https://www.emailjs.com/) (formulario de contacto)
+- [react-icons](https://react-icons.github.io/react-icons/)
+
+## 🚀 Desarrollo
+
+```bash
+npm install      # instalar dependencias
+npm run dev      # servidor de desarrollo
+npm run build    # compilar para producción
+npm run preview  # previsualizar el build
+npm run deploy   # desplegar en GitHub Pages
+```
+
+## 🔗 Enlaces
+
+- 🌐 Portfolio: https://bmcutting.github.io/brian-portfolio/
+- 💼 LinkedIn: https://www.linkedin.com/in/brian-michel-morales-cutting
+- 🐙 GitHub: https://github.com/bmcutting
