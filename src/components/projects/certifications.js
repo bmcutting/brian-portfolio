@@ -2,6 +2,7 @@ import EFSET from "../../assets/images/efset.png";
 import CS from "../../assets/images/foundationalCS.png";
 import Web from "../../assets/images/responsiveWeb.png";
 import FrontEnd from "../../assets/images/frontEnd.png";
+import B1English from "../../assets/images/b1English.png";
 
 export const certifications = [
   {
@@ -23,5 +24,10 @@ export const certifications = [
     id: 4,
     img: FrontEnd,
     link: "https://www.freecodecamp.org/certification/brianmichel/front-end-development-libraries",
+  },
+  {
+    id: 5,
+    img: B1English,
+    link: "https://www.freecodecamp.org/certification/brianmichel/b1-english-for-developers",
   },
 ];

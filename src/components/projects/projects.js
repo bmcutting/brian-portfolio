@@ -1,7 +1,18 @@
 import Programming from "../../assets/images/programming.jpg";
 import EdgeComputing from "../../assets/images/edgeComputing.jpg";
+import Car from "../../assets/images/car.jpg";
 
 export const projects = [
+  {
+    title: "DealerNode — ERP automotriz",
+    description:
+      "Desarrollo frontend de features end-to-end sobre un ERP automotriz en React 19 y TypeScript.",
+    details:
+      "Aplicación ERP para concesionarios (DealerNode) sobre la que desarrollo features completas: formularios, tablas con filtrado y paginación, modales y flujos multipaso. La integración con las APIs REST se realiza mediante servicios HTTP tipados y un patrón Mapper para la conversión DTO → dominio. Stack: React 19, TypeScript, Vite, Tailwind CSS 4, React Router 7 y Axios.",
+    github: null,
+    deploy: "https://www.dealernode.net/",
+    image: Car,
+  },
   {
     title: "Interfaz IIoT",
     description:

@@ -1,4 +1,4 @@
-import { certifications } from "./Certifications"
+import { certifications } from "./certifications"
 
 export const CertificationsPage = () => {
   return (

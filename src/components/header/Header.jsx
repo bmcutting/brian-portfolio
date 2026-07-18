@@ -24,13 +24,17 @@ export const Header = () => {
   };
 
   return (
-    <div
-      className="fixed top-2 right-4 w-1/2 lg:w-1/3 h-[8vh]
+    <>
+      <div className="fixed top-2 left-4 z-50">
+        <Toggle />
+      </div>
+      <div
+        className="fixed top-2 right-4 w-1/2 lg:w-1/3 h-[8vh]
       bg-white/20 dark:bg-black/20 backdrop-blur-lg
       rounded-xl shadow-md flex justify-around items-center
       text-sm text-black/80 dark:text-white/50 font-medium transition-all duration-300 z-50
       max-sm:hidden"
-    >
+      >
       <button
         className={`hover:dark:text-white transition-colors cursor-pointer hover:dark:bg-black/30 p-4 rounded-xl
         ${
@@ -56,6 +60,17 @@ export const Header = () => {
       <button
         className={`hover:dark:text-white transition-colors cursor-pointer hover:dark:bg-black/30 p-4 rounded-xl
         ${
+          activeSection === "experience"
+            ? "dark:text-white font-extrabold transition-all duration-500"
+            : ""
+        }`}
+        onClick={() => scrollToSection("experience")}
+      >
+        Experiencia
+      </button>
+      <button
+        className={`hover:dark:text-white transition-colors cursor-pointer hover:dark:bg-black/30 p-4 rounded-xl
+        ${
           activeSection === "projects"
             ? "dark:text-white font-extrabold transition-all duration-500"
             : ""
@@ -75,6 +90,7 @@ export const Header = () => {
       >
         Contacto
       </button>
-    </div>
+      </div>
+    </>
   );
 };
